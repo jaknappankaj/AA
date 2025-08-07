@@ -55,15 +55,13 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            InkWell(
-              child: Text("Hello"),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LandingPage()),
-                );
-              },
-            )
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LandingPage()));
+                },
+                child: Text("Go to Landing Page")),
+            Text("Data not available")
           ],
         ),
       ),
