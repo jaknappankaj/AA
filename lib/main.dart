@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/HomePage.dart';
+import 'package:new_app/LandingPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                      MaterialPageRoute(builder: (context) => LandingPage()));
                 },
                 child: Text("Hellossssss")),
             Text("Data not available")
