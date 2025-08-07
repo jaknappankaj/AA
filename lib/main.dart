@@ -58,9 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LandingPage()));
+                      MaterialPageRoute(builder: (context) => HomePage()));
                 },
-                child: Text("Hellossssss")),
+                child: Text("Navigate to HomePage")),
             Text("Data not available")
           ],
         ),
